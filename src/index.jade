@@ -19,9 +19,10 @@ html
         h1 Map-Reduce
         h2 En MongoDb
         hr
-        strong Mario Andrés Yepes C
-        hr
+        strong Mario Andrés Yepes C 
+        p marioy47@gmail.com
         a(href='https://twitter.com/marioy47') @marioy47
+        a(href="http://dazzet.co") dazzet.co
 
       section
         h2 (Muy) Breve repaso
@@ -30,13 +31,10 @@ html
           db.mi_col.find({nombre: "Mario"}, {}) //SELECT
           db.mi_col.insert({telefono: 4458900}) //INSERT
           db.mi_col.drop() // DROP TABLE
-          db.mi_col.update(
-            {}, 
-            {$set: {}}, 
-            multi: true
-            ) // UPDATE
-          db.mi_col.remove({})
-          db.mi_col.ensureIndex({campo:1})
+          db.mi_col.update( {}, {$set: {}}) // UPDATE
+          db.mi_col.remove({}) //DELETE
+          db.mi_col.ensureIndex({campo:1}) //INDEX
+          
       section
         h2 Agregación
         p Operaciones que trabajan sobre varios registros de datos (colecciones) y regresan un resultado como un solo documento o un conjunto de documentos (colección)
