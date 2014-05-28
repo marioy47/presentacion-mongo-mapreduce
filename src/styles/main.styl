@@ -1,10 +1,14 @@
 @import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
 
+//@import url(http://fonts.googleapis.com/css?family=Open\+Sans:600\|Oswald:700);
+//@import url(http://fonts.googleapis.com/css?family=Open\+Sans:600|Oswald:700)
+
 // variables!
 
 slide_width = 640px
 slide_height = 480px
-slide_background = #eaeaea
+slide_background = none
+
 
 slide_transition_length = .6s
 slide_transition_easing = ease
@@ -158,9 +162,13 @@ pre
 // content styles
 
 body
-  font-family: helvetica, arial, sans-serif
+  font-family: "Open Sans", helvetica, arial, sans-serif
   font-size: 18px
   color: #404040
+  background: #e5daa0
+
+h1, h2, h3, h4
+  font-family: Oswald, "Open Sans", helvetica, arial, sans-serif
 
 h1
   font-size: 72px
@@ -196,3 +204,9 @@ p
 a
   color: #0089f3
   text-decoration: none
+
+article.inicial
+  background: #49287f url(../img/logo_dazzet.png) no-repeat 10px 10px;
+  background-image: "img/log_dazzet.png"
+  color: white
+
